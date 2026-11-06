@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import Politics from './Politics.jsx'
 import ArticleDetails from './ArticleDetails.jsx'
+import VoiceAssistant from './assistant/VoiceAssistant.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/politics" element={<Politics />} />
         <Route path="/article" element={<ArticleDetails />} />
       </Routes>
+      <VoiceAssistant />
     </BrowserRouter>
   </StrictMode>,
 )
